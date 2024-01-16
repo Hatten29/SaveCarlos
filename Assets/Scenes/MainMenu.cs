@@ -6,7 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
     
 }
