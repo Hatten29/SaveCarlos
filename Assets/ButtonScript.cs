@@ -26,7 +26,7 @@ public class ButtonScript : MonoBehaviour
             uiImage.enabled = false;
         }
 
-        // Subscribe to the button click event
+        // Subscribe to the button click even
         if (uiButton != null)
         {
             uiButton.onClick.AddListener(OnButtonClick);
