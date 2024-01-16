@@ -573,6 +573,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &297765249
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +960,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1464611500}
   smoothSpeed: 0.125
+<<<<<<< HEAD
 --- !u!1 &527625477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1407,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676952034}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
 --- !u!1 &844132215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,9 +2156,12 @@ GameObject:
   - component: {fileID: 1464611498}
   - component: {fileID: 1464611497}
   - component: {fileID: 1464611496}
+<<<<<<< HEAD
   - component: {fileID: 1464611501}
   - component: {fileID: 1464611503}
   - component: {fileID: 1464611502}
+=======
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2285,7 +2294,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc46d0f295e5bc54889fdc5062787002, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2306,12 +2315,13 @@ Transform:
   m_GameObject: {fileID: 1464611495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.05, y: -2.22, z: 0}
+  m_LocalPosition: {x: -0.045218706, y: -2.8333302, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!61 &1464611501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2691,6 +2701,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506504760}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
 --- !u!1 &1663306693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,8 +3689,11 @@ SceneRoots:
   - {fileID: 1663306697}
   - {fileID: 2109709083}
   - {fileID: 279099132}
+<<<<<<< HEAD
   - {fileID: 463013452}
   - {fileID: 1467369153}
   - {fileID: 651376205}
   - {fileID: 449699633}
   - {fileID: 81876050}
+=======
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
