@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 449699634}
   m_Layer: 0
   m_Name: images
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 676952037}
   - component: {fileID: 676952036}
   m_Layer: 5
-  m_Name: Resume
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1298,7 +1298,7 @@ RectTransform:
   m_GameObject: {fileID: 676952034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.1999, y: 3.4999, z: 1}
+  m_LocalScale: {x: 1.4399229, y: 3.4999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1675008189}
@@ -1306,7 +1306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -94}
+  m_AnchoredPosition: {x: 773, y: 344}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676952036
@@ -2151,6 +2151,8 @@ GameObject:
   - component: {fileID: 1464611497}
   - component: {fileID: 1464611496}
   - component: {fileID: 1464611501}
+  - component: {fileID: 1464611503}
+  - component: {fileID: 1464611502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2355,6 +2357,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.1}
   m_EdgeRadius: 0
+--- !u!114 &1464611502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464611495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a500b0629cff9e8449e6ad4293c70fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1464611503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464611495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4687fda8871835c47be28540f1e64946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467369150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,7 +2893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Resume
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2894,8 +2920,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
