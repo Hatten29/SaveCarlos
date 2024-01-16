@@ -4,10 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - triggerMonster
   - player
   - MonsterTrigger
   - Enemy
+=======
+  - dur1
+>>>>>>> fad7dc5bdb8d32b4cd7c43718fa90e32bdb694d3
   layers:
   - Default
   - TransparentFX
