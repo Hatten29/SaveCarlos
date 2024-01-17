@@ -12,11 +12,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        HandleMovementInput();
-    }
-
-    private void HandleMovementInput()
-    {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -25,11 +20,8 @@ public class PlayerController : MonoBehaviour
         FlipCharacter(horizontalInput);
         transform.Translate(movement * speed * Time.deltaTime);
 
-        // Check if the player is in the trigger zone and press the "E" key
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            HandleInteraction();
-        }
+
+
     }
 
     private void FlipCharacter(float horizontalInput)
@@ -42,11 +34,5 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
         }
-    }
-
-    private void HandleInteraction()
-    {
-        // Implement interaction logic here if needed
-        Debug.Log("Interaction Key (E) Pressed");
     }
 }
