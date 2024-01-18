@@ -22,8 +22,12 @@ public class PlayerController : MonoBehaviour
         movement.Normalize();
         FlipCharacter(horizontalInput);
         transform.Translate(movement * speed * Time.deltaTime);
-
         
+        if (horizontalInput > 0)
+        {
+
+        }
+      
 
     }
 
