@@ -9,11 +9,11 @@ public class PlayerController : MonoBehaviour
 
     NavMeshAgent _agent;
     Animator _animator;
-
+   
 
     public float speed = 2.5f;
     private Vector3 originalScale;
-
+    
  
 
     private void Start()
@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
 
         _animator = GetComponentInChildren<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+
+        
+
     }
 
     private void Update()
