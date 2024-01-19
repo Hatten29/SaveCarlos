@@ -1,7 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+
+    NavMeshAgent _agent;
+    Animator _animator;
+
+
     public float speed = 2.5f;
     private Vector3 originalScale;
 
@@ -10,6 +19,9 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         originalScale = transform.localScale;
+
+        _animator = GetComponentInChildren<Animator>();
+        _agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
@@ -23,8 +35,13 @@ public class PlayerController : MonoBehaviour
         FlipCharacter(horizontalInput);
         transform.Translate(movement * speed * Time.deltaTime);
 
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+           
+        }
 
+        float speedPercent = _agent.velocity.magnitude / _agent.speed;
+        _animator.SetFloat("speed", speedPercent);
     }
 
     private void FlipCharacter(float horizontalInput)
