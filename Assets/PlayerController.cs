@@ -34,20 +34,20 @@ public class PlayerController : MonoBehaviour
         movement.Normalize();
         FlipCharacter(horizontalInput);
         transform.Translate(movement * speed * Time.deltaTime);
-<<<<<<< HEAD
+
 
         if (Input.GetMouseButtonDown(0))
         {
            
         }
-=======
+
         
         if (horizontalInput > 0)
         {
 
         }
       
->>>>>>> f741ea7944f2addc6c89b490a6b271a0691b0e92
+
 
         float speedPercent = _agent.velocity.magnitude / _agent.speed;
         _animator.SetFloat("speed", speedPercent);
