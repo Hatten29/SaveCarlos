@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class PlayerController : MonoBehaviour
 {
 
-    NavMeshAgent _agent;
+
     Animator _animator;
    
 
@@ -19,9 +19,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         originalScale = transform.localScale;
-
-        _animator = GetComponentInChildren<Animator>();
-        _agent = GetComponent<NavMeshAgent>();
 
         
 
@@ -52,8 +49,7 @@ public class PlayerController : MonoBehaviour
       
 
 
-        float speedPercent = _agent.velocity.magnitude / _agent.speed;
-        _animator.SetFloat("speed", speedPercent);
+      
     }
 
     private void FlipCharacter(float horizontalInput)
