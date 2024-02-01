@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Room#0");
         Time.timeScale = 1f;
+        Debug.LogError("Time");
     }
     
 }
